@@ -5,7 +5,7 @@ import pickle
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-DATASETS_ROOT = PROJECT_ROOT.parent / "ICASSP2024_ASTHL-main" / "datasets"
+DATASETS_ROOT = PROJECT_ROOT.parent / "datasets"
 
 # 仅作无法读取文件时的回退
 FALLBACK_STATS = {

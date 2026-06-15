@@ -8,7 +8,7 @@ GRU + hypergraph fusion model for next POI recommendation.
 pip install torch numpy pyyaml
 ```
 
-Place datasets under `../ICASSP2024_ASTHL-main/datasets/{NYC|TKY|Gowalla}/`:
+Place datasets under `../datasets/{NYC|TKY|Gowalla}/`:
 
 - `train_poi_zero.txt`
 - `test_poi_zero.txt`
@@ -18,9 +18,9 @@ Place datasets under `../ICASSP2024_ASTHL-main/datasets/{NYC|TKY|Gowalla}/`:
 
 ```bash
 cd HRF-HPL
-python train.py --dataset Gowalla
+python train.py --dataset NYC
 ```
 
 Common options: `--batch_size`, `--epochs`, `--device cuda`, `--save_dir logs`.
 
-Training outputs (logs, args yaml, checkpoint) are saved under `--save_dir` (default: `logs/`).
+Training outputs are saved under `--save_dir` (default: `logs/`).
